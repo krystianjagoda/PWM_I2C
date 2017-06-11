@@ -1,0 +1,20 @@
+Duty Cyckle - Value:
+
+0%		-	0 	[00 00]
+25%		-	125	[00 7D]
+50%		-	250	[00 FA]
+75%		-	375	[01 77]
+100%	-	500	[01 F4]
+
+Slave Adress: 0x22;
+Data:
+0x00	-	Duty Cycle High Value
+0x01	-	Duty Cycle Low Value
+0x02	-	Write to EEPROM [0x00 - NO, 0x01 - YES]
+
+Write Format:
+w 22 0 HH LL 0S p
+
+Read Format:
+w 22 0 r 22 HH LL 0S p
+
